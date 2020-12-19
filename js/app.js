@@ -18,7 +18,7 @@ const Highlight = ({color, children}) => (
 const NavItem = ({className, href, children, image}) => (
   <li className={`mh-2-ns f6 f4-l tc ${className}`}>
     <a className='white no-underline' href={href}>
-      {image ? <img src={`../images/${image}`} alt="" className='db center logo' /> : children}
+      {image ? <img src={`./images/${image}`} alt="" className='db center logo' /> : children}
     </a>
   </li>
 )
@@ -109,7 +109,7 @@ class Attraction extends React.Component {
           {/* here we need to remember to pass along all of our props and state */}
           { (title && description) ? 
           <Overlay {...this.props} {...this.state} /> : '' }
-          <img src={`../images/${image}`} className="db" />
+          <img src={`./images/${image}`} className="db" />
         </div>
       </div>
     )
